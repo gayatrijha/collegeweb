@@ -418,12 +418,17 @@ main {
   margin: auto;
 }
 /* abt*/
+.containerabt{
+padding:20px;
+
+}
 .abt{
-  
+  color:black;
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
   padding:0 20px; 
+  
 }
 
 /* view more btn*/
@@ -441,11 +446,14 @@ main {
   cursor: pointer;
   position: absolute; 
  display:flex;
+
+ 
 }
 .button3 {
   background-color: white; 
   color: black; 
   border: 2px solid #900000;
+  
 }
 
 .button3:hover {
@@ -676,6 +684,7 @@ main {
 }
 #author {
   margin-bottom: 0.25rem;
+  color:black;
 }
 #job {
   margin-bottom: 0.5rem;
@@ -724,13 +733,16 @@ main {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
+  
    
 }
-.gallery__img {
+ .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+ 
 }
+
 .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 5;
