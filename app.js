@@ -108,5 +108,6 @@ randomBtn.addEventListener("click", function () {
   showPerson(currentItem);
 });
     
-//footer
+//message
+
 
