@@ -830,7 +830,7 @@ main {
   
 
   /*footer*/
-
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
   *{
     margin: 0;
     padding: 0;
@@ -838,11 +838,24 @@ main {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
-
-
-
+  .content1{
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .textf{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+  }
   footer{
-   
+    
     bottom: 0px;
     width: 100%;
     background: #111;
@@ -915,7 +928,7 @@ main {
   .center .content .fas:hover{
     background: #f12020;
   }
-  .center .content .text{
+  .center .content .textf{
     font-size: 1.0625rem;
     font-weight: 500;
     padding-left: 10px;
@@ -923,9 +936,45 @@ main {
   .center .content .phone{
     margin: 15px 0;
   }
- 
-
-  
+  .right form .textf{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form .msgForm{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+  }
+  .right form input:focus,
+  .right form .msgForm:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btn button:hover{
+    background: #000;
+  }
   .bottom center{
     padding: 5px;
     font-size: 0.9375rem;
@@ -934,12 +983,27 @@ main {
   .bottom center span{
     color: #656565;
   }
-  
-  .bottom center{
-    padding: 5px;
-    font-size: 0.9375rem;
+  .bottom center a{
+    color: #f12020;
+    text-decoration: none;
   }
-
+  .message{
+    background: none;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 14px;
+   
+      min-width: 100%;
+      max-width: 100%;
+    }
+    
+  
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
   @media screen and (max-width: 900px) {
     footer{
       position: relative;
@@ -954,77 +1018,4 @@ main {
     }
   }
   
-  
-
-  .contact-section{
-    background: #111;
-    padding: 10px 0;
-    text-align: left;
-  }
-  
-  .inner-width{
-    max-width: 600px;
-    margin: auto;
-    padding: 0 20px;
-  }
-  
-  .contact-section h1{
-    font-size: 20px;
-    color: #888;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 400;
-  }
-  
-  .name,.email,.message{
-    background: none;
-    border:none;
-    outline: none;
-    border-bottom: 1px solid;
-    color: #888;
-    padding: 10px 6px;
-    font-size: 14px;
-   
-  }
-  
-  .name{
-    float: left;
-    width: 270px;
-  }
-  
-  .email{
-    float: left;
-    width: 270px;
-  }
-  
-  .message{
-    min-width: 100%;
-    max-width: 100%;
-  }
-  
-  
-  .contact-section button{
-    background: none;
-    color: #f12020;
-    border: 1px solid #f12020;
-    padding: 12px 40px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition: 0.4s linear;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .contact-section button:hover{
-    background: #f12020;
-    color: #fff;
-  }
-  
-  
-  @media screen and (max-width:600px){
-    .name,.email{
-      width: 60%;
-    }
-  }
+ 
