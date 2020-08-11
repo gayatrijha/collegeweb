@@ -412,7 +412,7 @@ main {
 
  
 }
-.carousel{
+.carousell{
   max-width: 100%;
   position: relative;
   margin: auto;
@@ -441,7 +441,7 @@ main {
 .border1{
   width: 100px;
   height: 3px;
-  background: #e74c3c;
+  background: #900000;
   margin: 40px auto;
 }
 .about-section-row{
@@ -451,23 +451,25 @@ main {
 
 .aboutt{
   padding-right: 30px;
+ 
 }
 .aboutt p{
   text-align: justify;
   margin-bottom: 20px;
+  margin-top: 0.2 rem;
 }
 .aboutt a{
   display: inline-block;
-  color: #e74c3c;
+  color: #900;
   text-decoration: none;
-  border: 2px solid #e74c3c;
+  border: 2px solid #900;
   border-radius: 24px;
   padding: 8px 40px;
   transition: 0.4s linear;
 }
 .aboutt a:hover{
   color: #fff;
-  background: #e74c3c;
+  background: #900;
 }
 @media screen and (max-width:700px) {
 .aboutt{
@@ -475,12 +477,139 @@ main {
   }
 }
 
+/* img grd*/
+.containergr {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 460px;
+  grid-gap: 30px;
+  align-items: stretch;
+  margin: auto 0;
+  width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .containergr {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .containergr {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .containergr {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .containergr {
+    width: 1140px;
+  }
+}
+
+.containergr .mycard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.containergr .mycard .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.containergr .mycard .img-box img {
+  width: 100%;
+}
+
+.containergr .mycard .content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  padding: 60px 20px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.containergr .mycard:hover .content {
+  bottom: 0;
+}
+
+.containergr .mycard:nth-child(1) .content {
+  background: linear-gradient(0deg, #195268, transparent);
+}
+
+.containergr .mycard:nth-child(2) .content {
+  background: linear-gradient(0deg, #513833, transparent);
+}
+
+.containerr .mycard:nth-child(3) .content {
+  background: linear-gradient(0deg, #352c2d, transparent);
+}
+
+.containergr .mycard:nth-child(4) .content {
+  background: linear-gradient(0deg, #494846, transparent);
+}
+
+.containergr .mycard .content h2 {
+  margin-bottom: 8px;
+  padding: 0;
+  color: #fff;
+  font-size: 22px;
+}
+
+.containergr .mycard .content h3 {
+  color: #ffeb3b;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.containergr .mycard .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.containergr .mycard .content ul {
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.containergr .mycard .content ul li a {
+  color: #ccc;
+  padding: 0 10px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.containergr .mycard .content ul li a:hover {
+  color: #fff;
+}
 
 
 
 /* testi1*/
-
-
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -488,7 +617,7 @@ main {
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-5: #900000;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -714,7 +843,7 @@ main {
 }
 .prev-btn,
 .next-btn {
-  color: var(--clr-primary-7);
+  color: #900000;
   font-size: 1.25rem;
   background: transparent;
   border-color: transparent;
@@ -724,7 +853,7 @@ main {
 }
 .prev-btn:hover,
 .next-btn:hover {
-  color: var(--clr-primary-5);
+  color: #900000;
 }
 .random-btn {
   margin-top: 0.5rem;
@@ -742,89 +871,53 @@ main {
   color: var(--clr-primary-1);
 }
 
+/*msg*/
 
 
-  /* image grid*/
- 
-  .imageGrid {
-    display: flex;
-    flex-direction: column;
-    
-    height: 100%;
-  }
-  
-  .imageGrid_row {
-    display: flex;
-    
-    
-    height: 50%;
-  }
-  
-  .imageGrid_item {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    flex-direction: column;
-  }
-  
-  .imageGrid_item img {
-    flex-shrink: 0;
-    flex-grow: 1;
-    
-    min-width: 100%;
-    min-height: 100%;
-  }
-  
-  .imageGrid_overlay  {
-    position: absolute;
-    top: 0;
+
+
+
+  /* side logo*/
+  .contact-info{
+    position: fixed;
+    top: 40%;
+    z-index: 99999;
     left: 0;
-    width: 100%;
-    height: 100%;
-    
-    margin: 0;
-    padding: 1em;
-    
-    background-color: hsla(189, 100%, 25%, 1);
-    color: white;
+  }
+  .options{
+    cursor: pointer;
+    position: relative;
+  }
+  .options i{
+    display: block;
+    width: 60px;
     text-align: center;
-    opacity: 0.8;
-    
-    padding-top: 0.25em;
-    transform: translateY( calc(100% - 2.7em) );
-    
-    transition: transform 0.5s, padding-top 0.5s, background-color 0.5s, opacity 0.5s;
+    height: 60px;
+    line-height: 60px;
+    background: #900;
+    color: #b9b9b9;
+    font-size: 20px;
+    transition: 0.6s;
+  }
+  .options:hover i{
+    color: #3498db;
+  }
+  .texts{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    background: #1b1b1b;
+    top: 0;
+    z-index: -1;
+    left: -140px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.6s;
   }
   
-  .imageGrid_overlay h2 {
-    margin: 0;
-    font-size: 1.75em;
-  }
-  
-  .imageGrid_item:hover .imageGrid_overlay {
-    transform: none;
-    padding-top: 1em;
-  
-    
-    background-color: hsla(189, 50%, 25%, 0.8);
-    opacity: 1;
-  }
-  
-  
-  
-  
-
-  
-  
-  @keyframes hint-animation {
-    0% {opacity: 1; z-index: 1001;}
-    100% {opacity: 0; z-index: -1;}
+  .options:hover .texts{
+    left: 60px;
   }
   
   
@@ -995,7 +1088,7 @@ main {
     color: #888;
     padding: 10px 6px;
     font-size: 14px;
-   
+    margin-bottom: 40px;
       min-width: 100%;
       max-width: 100%;
     }
