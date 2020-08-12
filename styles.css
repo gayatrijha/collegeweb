@@ -478,133 +478,57 @@ main {
 }
 
 /* img grd*/
-.containergr {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: 460px;
-  grid-gap: 30px;
-  align-items: stretch;
-  margin: auto 0;
-  width: 100%;
+.intro, .credit {
+	display: flex;
+  flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Monserrat', sans-serif;
+	color: #c07a95;
+	margin: 5px;
+	letter-spacing: 2px;
 }
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .containergr {
-    width: 540px;
-  }
+.credit a {
+	text-decoration: none;
+	margin: 5px;
 }
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .containergr {
-    width: 720px;
-  }
-}
-
-@media (min-width: 992px)
-{
-  .containergr {
-    width: 960px;
-  }
-}
-
-@media (min-width: 1200px)
-{
-  .containergr {
-    width: 1140px;
-  }
-}
-
-.containergr .mycard {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-.containergr .mycard .img-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-}
-
-.containergr .mycard .img-box img {
-  width: 100%;
-}
-
-.containergr .mycard .content {
-  position: absolute;
-  width: 100%;
-  height: 60%;
-  bottom: -100%;
-  padding: 60px 20px 20px;
-  box-sizing: border-box;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.containergr .mycard:hover .content {
-  bottom: 0;
-}
-
-.containergr .mycard:nth-child(1) .content {
-  background: linear-gradient(0deg, #195268, transparent);
-}
-
-.containergr .mycard:nth-child(2) .content {
-  background: linear-gradient(0deg, #513833, transparent);
-}
-
-.containerr .mycard:nth-child(3) .content {
-  background: linear-gradient(0deg, #352c2d, transparent);
-}
-
-.containergr .mycard:nth-child(4) .content {
-  background: linear-gradient(0deg, #494846, transparent);
-}
-
-.containergr .mycard .content h2 {
-  margin-bottom: 8px;
-  padding: 0;
-  color: #fff;
-  font-size: 22px;
-}
-
-.containergr .mycard .content h3 {
-  color: #ffeb3b;
-  font-size: 16px;
-  margin-bottom: 16px;
-}
-
-.containergr .mycard .content p {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-size: 14px;
-}
-
-.containergr .mycard .content ul {
-  display: flex;
-  margin: 20px 0 0;
-  padding: 0;
-  align-items: center;
+.containergrid {
+	display: flex;
   justify-content: center;
-  list-style: none;
+  flex-wrap: wrap;
+  
+}
+.item {
+	min-width: 0;
+  margin: 5px;
+	transition: 0.8s ease;
+	box-shadow: 5px 5px 10px 2px #cccccc;
 }
 
-.containergr .mycard .content ul li a {
-  color: #ccc;
-  padding: 0 10px;
-  font-size: 18px;
-  transition: 0.5s;
+.item img {
+	width: 450px;
+	max-height: 450px;
+  max-width: 100%;
+  
 }
 
-.containergr .mycard .content ul li a:hover {
-  color: #fff;
+.item:hover {
+	transform: scale(0.9);
+}
+.centered  h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open sans";
+
+
+}
+.go{
+  position: relative;
+  text-align: center;
+  color: white;
+  
 }
 
 
