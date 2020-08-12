@@ -509,7 +509,7 @@ main {
 	width: 450px;
 	max-height: 450px;
   max-width: 100%;
-  
+  filter: brightness(60%);
 }
 
 .item:hover {
