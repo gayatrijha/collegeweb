@@ -504,6 +504,15 @@ main {
 	transition: 0.8s ease;
 	box-shadow: 5px 5px 10px 2px #cccccc;
 }
+.go p{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
 
 .item img {
 	width: 450px;
@@ -906,7 +915,7 @@ main {
     content: '';
     height: 2px;
     width: 15%;
-    background: #f12020;
+    background: #900;
     top: -10px;
   }
   .left .content p{
@@ -929,7 +938,7 @@ main {
     transition: 0.3s;
   }
   .left .content .social a span:hover{
-    background: #f12020;
+    background: #900;
   }
   .center .content .fas{
     font-size: 1.4375rem;
@@ -943,7 +952,7 @@ main {
     cursor: pointer;
   }
   .center .content .fas:hover{
-    background: #f12020;
+    background: #900;
   }
   .center .content .textf{
     font-size: 1.0625rem;
@@ -983,7 +992,7 @@ main {
     width: 100%;
     border: none;
     outline: none;
-    background: #f12020;
+    background: #900;
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
@@ -1001,7 +1010,7 @@ main {
     color: #656565;
   }
   .bottom center a{
-    color: #f12020;
+    color: #900;
     text-decoration: none;
   }
   .message{
