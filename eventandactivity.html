@@ -1,69 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Event and Activities</title>
+  <title>Club and Activities</title>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-  
-  
-  }
-  .jumbotron{
-    min-height: 100px;
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
   }
   </style>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid">
-<div class="container mt-3">
-
-<h2></h2>
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ul>
   
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/club/eventmng1.jpg" alt="Los Angeles">
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="img/club/eventmng1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Event Management</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/club/musicclub (1).jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Music Club</h3>
+          <p></p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="img/club/poetlitclub.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Poetry Club</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/club/socialclub2.jpeg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Social Club</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/club/sportsclub (1).jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Sports Club</h3>
+          <p></p>
+        </div>
+      </div>
+  
     </div>
-    <div class="carousel-item">
-      <img src="img/club/musicclub (1).jpg" alt="Chicago" >
-    </div>
-    <div class="carousel-item">
-      <img src="img/club/poetlitclub.jpg" alt="New York" >
-    </div>
-    <div class="carousel-item">
-        <img src="img/club/socialclub1.jpeg" alt="New York" >
-    </div>
-    <div class="carousel-item">
-        <img src="img/club/sportsclub (1).jpg" alt="New York" >
-    </div>
-      
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+</div>
+
+<div class="container">
+  <h2><b>Poetry and Literature Club</b>  <i class="fas fa-pen-fancy" style="font-size:48px;color:red"></i></h2>
   
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
+  <div class="well">
+    Poetry and literature club aims for students who love literature, and want to share their experience, reading and thoughts with others who have the same interest and talent. This club helps to develop analytical and creative thinking skill. It offers an opportunity to appreciate a different kind of literature and increase their literary skill. Students associated with this club will contribute to the college journal
+  </div>
+
+  <h3><b>Activates under poetry and literature club</b></h3>
+  <div class="well"> 
+    • Book review<br>
+    • Debate competition<br>
+    • Case analysis<br>
+    • Article writing<br>
+    • poetry competition
+  </div>
 </div>
+
+<div class="container">
+  <h2><b>Event Management and Entrepreneur Club</b> <i class="far fa-calendar-check" style="font-size:48px;color:red"></i></h2>
+  <div class="well">
+    Platinumties who are passionate to further strengthen their leadership quality and have the zeal to be an entrepreneur in future can have their active participation in Event Management & Entrepreneur club. A student will get the opportunity to learn and explore various entrepreneurial requirements as identification of business opportunities, preparation of the business plan, know how to earn mobilizing and managing resources, event governance etc
+  </div>
+  <h3><b>Programs carried out under this club:</b></h3>
+  <div class="well"> 
+    
+    • Interactive sessions with entrepreneurs and corporate leaders of Nepal<br>
+    • Organize various workshops and events<br>
+    • Organize training required for the student in the professional world<br>
+    • Entrepreneur week at college
+  
+  </div>
 </div>
+
+<div class="container">
+  <h2><b>Sports Club</b> <i class="fas fa-basketball-ball" style="font-size:48px;color:red"></i></h2>
+  <div class="well">
+    Platinumties who are passionate to further strengthen their leadership quality and have the zeal to be an entrepreneur in future can have their active participation in Event Management & Entrepreneur club. A student will get the opportunity to learn and explore various entrepreneurial requirements as identification of business opportunities, preparation of the business plan, know how to earn mobilizing and managing resources, event governance etc
+  </div>
+  <h3><b>Programs carried out under this club:</b></h3>
+  <div class="well"> 
+    
+    • Interactive sessions with entrepreneurs and corporate leaders of Nepal<br>
+    • Organize various workshops and events<br>
+    • Organize training required for the student in the professional world<br>
+    • Entrepreneur week at college
+  </div>
+
+  <div class="container">
+    <h2><b>Social Club</b> <i class="fas fa-hands-helping" style="font-size:48px;color:red"></i></h2>
+    <div class="well">
+      This club is involved in creating awareness and learning of contemporary social and environmental issues in the context of social responsibility not only among Platinumites but also to common people of society. The club is composed of diversified students who share common interests in charity work, volunteering and social contribution.
+    </div>
+    <h3><b>Programs carried out under this club:</b></h3>
+    <div class="well"> 
+      
+      • Blood donation<br>
+      • Social awareness campaign<br>
+      • Financial contribution & donation<br>
+      • Environmental cleaning & preserving campaign.
+    </div>
 </div>
+
+
 
 </body>
 </html>

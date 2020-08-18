@@ -108,5 +108,5 @@ randomBtn.addEventListener("click", function () {
 //our services
 
 
-
+let rellax = new Rellax('.rellax');
 
