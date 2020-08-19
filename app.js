@@ -25,7 +25,7 @@ const reviews = [
   {
     id: 1,
     name: "name1",
-    job: "web developer",
+ 
     img:
       "./img/message/po.jpg",
     text:
@@ -34,7 +34,7 @@ const reviews = [
   {
     id: 2,
     name: "name 2",
-    job: "web designer",
+   
     img:
       "./img/message/av.jpg",
     text:
@@ -43,7 +43,7 @@ const reviews = [
   {
     id: 3,
     name: "name 3",
-    job: "intern",
+  
     img:
       "./img/message/ra.jpg",
     text:
