@@ -540,118 +540,84 @@ main {
   
 }
 
-/*message*/
+/*abt message*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-}
-
-.thismessage{
-  width: 100wh;
-  height: 100vh;
-  background: #fff;
-  overflow: hidden;
-  
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.card {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,.5);
-  overflow: hidden;
-  
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transition: .5s;
-}
-
-.card.one{
-  background: url('img/message/1_jivan_gurung-chairman.jpg');
-  background-size: cover;
-}
-
-.card.two{
-  background: url('img/message/av.jpg');
-  background-size: cover;
-}
-
-.card.three{
-  background: url('img/message/krishna_sir\ vice\ pri.jpg');
-  background-size: cover;
-}
-
-.card::before{
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 400px;
-  background: rgba(0,0,0,.5);
-  opacity: 0;
-  transition: .5s;
-}
-
-.card:hover::before{
-  opacity: 1;
-  transition: .5s;
-}
-
-.card:hover{
-  transform: translatey(-30px);
-  box-shadow: 0 40px 30px rgba(0,0,0,.5);
-  transition: .5s;
-}
-
-.card:hover .contentm{
-  transform: translatex(0);
-  transition: .5s;
-}
-
-.contentm{
-  width: 100%;
+.blog-posts{
+  width: min(1200px, 100%);
   padding: 20px;
-  position: relative;
-  transform: translatex(-300px);
-  transition: .5s;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
 }
 
-.aboutmessage{
-  width: 100%;
-  text-align: justify;
-  letter-spacing: 2px;
-  font-size: 32px;
-  font-weight: 700;
-  text-shadow: -3px 3px 2px rgba(0,0,0,.3);
+.post{
+  width: calc(33% - 10px);
+  overflow: hidden;
 }
 
-.aboutp{
+.post-img{
   width: 100%;
-  text-align: justify;
+  border-radius: 6px;
+  transition: .3s linear;
+}
+
+.post-content{
+  background-color: #ffffffdd;
+  margin: 0 20px;
+  padding: 30px;
+  border-radius: 6px;
+  transform: translateY(-60px);
+  transition: .3s linear;
+}
+
+.post-content h3{
   font-size: 16px;
-  color: #ccc;
+  margin-bottom: 10px;
 }
 
-.rm{
+.date{
+  font-size: 15px;
+  font-style: italic;
+  color: #e77f67;
+}
+
+.post:hover .post-img{
+  transform: translateY(20px);
+}
+
+.post:hover .post-content{
+  transform: translateY(-80px);
+}
+
+.abtmsg{
+  background-color: #444;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px){
+  .blog-posts{
+    justify-content: center;
+  }
+  .post{
+    width: min(600px, 100%);
+  }
+}
+.post a{
   display: inline-block;
-  text-align: justify;
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 15px;
-  padding: 5px 15px;
-  background: #ef3852;
-  border-radius: 5px;
+  color: #900;
+  text-decoration: none;
+  border: 2px solid #900;
+  border-radius: 24px;
+  padding: 8px 40px;
+  transition: 0.4s linear;
+}
+.post a:hover{
+  color: #fff;
+  background: #900;
 }
 
 /* testi1*/
